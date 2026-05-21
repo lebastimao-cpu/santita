@@ -15,16 +15,14 @@ body {
 
 /* TOPO COM LOGO COMO FUNDO */
 header {
-  background: linear-gradient(rgba(31,60,104,0.8), rgba(31,60,104,0.8)),
-              url('imagens/logo.png') center/cover no-repeat;
+  background: #1f3c68;
+  background-image: url('imagens/logo.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
-}
-
-/* ESCONDE A IMG ANTIGA (não precisa mais mostrar) */
-header img {
-  display: none;
 }
 
 h1 {
@@ -46,7 +44,6 @@ p {
   border-radius: 5px;
   display: inline-block;
   margin-top: 20px;
-  transition: 0.3s;
 }
 
 .btn:hover {
@@ -55,3 +52,46 @@ p {
 
 /* SEÇÕES */
 section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* BENEFÍCIOS */
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+/* BANNER */
+.banner {
+  background: #1f3c68;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* RODAPÉ */
+footer {
+  background: #1f3c68;
+  color: white;
+  padding: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>Encontre seu Propósito</h1>
+  <p>Testemunho • Inspiração • Vida com Deus</p>
+  <a href="#" class="btn">Quero participar</a>
+</header>
+
