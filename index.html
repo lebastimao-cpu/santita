@@ -13,21 +13,23 @@ body {
   background: #ffffff;
 }
 
-/* TOPO */
+/* TOPO COM LOGO COMO FUNDO */
 header {
-  background: #1f3c68;
+  background: linear-gradient(rgba(31,60,104,0.8), rgba(31,60,104,0.8)),
+              url('imagens/logo.png') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 100px 20px;
 }
 
+/* ESCONDE A IMG ANTIGA (não precisa mais mostrar) */
 header img {
-  width: 120px;
-  margin-bottom: 20px;
+  display: none;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -44,91 +46,12 @@ p {
   border-radius: 5px;
   display: inline-block;
   margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0a800;
 }
 
 /* SEÇÕES */
 section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-/* BENEFÍCIOS */
-.benefits {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-}
-
-/* BANNER */
-.banner {
-  background: #1f3c68;
-  color: white;
-  padding: 60px 20px;
-}
-
-/* RODAPÉ */
-footer {
-  background: #1f3c68;
-  color: white;
-  padding: 20px;
-}
-</style>
-
-</head>
-<body>
-
-<header>
-  <!-- SUBSTITUI PELO NOME DO SEU ARQUIVO -->
-  <img src="logo.png" alt="Logo Santta">
-
-  <h1>Encontre seu Propósito</h1>
-  <p>Testemunho • Inspiração • Vida com Deus</p>
-
-  <a href="#" class="btn">Quero participar</a>
-</header>
-
-<section>
-  <h2>O que é o Santta?</h2>
-  <p>Um movimento que conecta pessoas através da fé, inspirando transformação e propósito de vida.</p>
-</section>
-
-<section>
-  <h2>O que você vai encontrar</h2>
-
-  <div class="benefits">
-    <div class="card">
-      <h3>🔥 Inspiração</h3>
-      <p>Mensagens que fortalecem sua caminhada</p>
-    </div>
-
-    <div class="card">
-      <h3>🙏 Fé</h3>
-      <p>Crescimento espiritual diário</p>
-    </div>
-
-    <div class="card">
-      <h3>🤝 Comunidade</h3>
-      <p>Pessoas com o mesmo propósito</p>
-    </div>
-  </div>
-</section>
-
-<section class="banner">
-  <h2>Comece sua jornada hoje</h2>
-  <a href="#" class="btn">Entrar agora</a>
-</section>
-
-<footer>
-  <p>© 2026 Santta - Todos os direitos reservados</p>
-</footer>
-
-</body>
-</html>
