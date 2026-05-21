@@ -4,81 +4,128 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Santita - Inspiração e Propósito</title>
+<title>Santita Jovens</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #ffffff;
 }
 
-/* TOPO COM LOGO COMO FUNDO */
+/* HERO */
 header {
-  background: #1f3c68;
-  background-image: url('imagens/logo.png');
-  background-position: center;
+  background: linear-gradient(rgba(31,60,104,0.85), rgba(31,60,104,0.85)),
+              url('imagens/logo.png');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+
+  opacity: 0;
+  animation: fade 1.5s forwards;
+}
+
+@keyframes fade {
+  to { opacity: 1; }
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 42px;
 }
 
 p {
   font-size: 18px;
 }
 
-/* BOTÃO */
+/* BOTÕES */
 .btn {
   background: #ffc107;
   color: #000;
-  padding: 15px 25px;
+  padding: 15px 30px;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  display: inline-block;
   margin-top: 20px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #e0a800;
+  transform: scale(1.1);
 }
 
 /* SEÇÕES */
 section {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s forwards;
 }
 
-/* BENEFÍCIOS */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CARDS */
 .benefits {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
 .card {
-  background: #f4f4f4;
-  padding: 20px;
+  background: #fff;
+  padding: 25px;
   border-radius: 10px;
-  width: 250px;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-/* BANNER */
-.banner {
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* VENDA */
+.sell {
   background: #1f3c68;
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
-/* RODAPÉ */
+.price {
+  font-size: 36px;
+}
+
+/* QR CODE */
+.qrcode {
+  margin-top: 20px;
+}
+
+.qrcode img {
+  width: 180px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* FOOTER */
 footer {
   background: #1f3c68;
   color: white;
@@ -87,11 +134,71 @@ footer {
 </style>
 
 </head>
+
 <body>
 
 <header>
-  <h1>Encontre seu Propósito</h1>
-  <p>Testemunho • Inspiração • Vida com Deus</p>
-  <a href="#" class="btn">Quero participar</a>
+  <h1>Grupo de Jovens Santita</h1>
+  <p>Encontre propósito, viva a fé e faça parte de algo maior</p>
+  #vendaQuero participar</a>
 </header>
 
+<section>
+  <h2>Sobre o grupo</h2>
+  <p>Um movimento jovem que busca crescer na fé, criar conexões e viver uma vida com propósito em Deus.</p>
+</section>
+
+<section>
+  <h2>O que vai encontrar</h2>
+
+  <div class="benefits">
+    <div class="card">
+      <h3>🔥 Mensagens</h3>
+      <p>Palavras que fortalecem sua caminhada</p>
+    </div>
+
+    <div class="card">
+      <h3>🙏 Fé</h3>
+      <p>Crescimento espiritual contínuo</p>
+    </div>
+
+    <div class="card">
+      <h3>🤝 Comunidade</h3>
+      <p>Pessoas com o mesmo propósito</p>
+    </div>
+  </div>
+</section>
+
+<!-- CAMISETA -->
+<section class="sell">
+  <h2>Camiseta Oficial Santita</h2>
+  <p>Vista o propósito e faça parte desse movimento</p>
+
+  <p>De <strike>R$79</strike></p>
+  <div class="price">R$49</div>
+
+  <a href="#" class="btn">Comprar agora</a>
+</section>
+
+<!-- APOIO -->
+<section>
+  <h2>Apoie nosso ministério</h2>
+  <p>Com sua contribuição, alcançamos mais vidas 🙌</p>
+
+  <div class="qrcode">
+    <!-- SUBSTITUI PELO SEU QR CODE -->
+    <img src="imagens/qrcode.png" alt="QR Code Pix">
+  </div>
+
+  <p>Escaneie o QR Code e contribua via Pix</p>
+</section>
+
+<footer>
+  <p>© 2026 Santita Jovens</p>
+</footer>
+
+<!-- WHATSAPP -->
+https://wa.me/5511979566910 💬</a>
+
+</body>
+</html>
