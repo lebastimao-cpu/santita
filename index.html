@@ -1,208 +1,141 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Santita Jovens</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* HERO */
-header {
-  background: linear-gradient(rgba(31,60,104,0.85), rgba(31,60,104,0.85)),
-              url('imagens/logo.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-
-  opacity: 0;
-  animation: fade 1.5s forwards;
-}
-
-@keyframes fade {
-  to { opacity: 1; }
-}
-
-h1 {
-  font-size: 42px;
-}
-
-p {
-  font-size: 18px;
-}
-
-/* BOTÕES */
-.btn {
-  background: #ffc107;
-  color: #000;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 20px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
-/* SEÇÕES */
-section {
-  padding: 60px 20px;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: aparecer 1s forwards;
-}
-
-@keyframes aparecer {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* CARDS */
-.benefits {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  width: 260px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-/* VENDA */
-.sell {
-  background: #1f3c68;
-  color: white;
-  padding: 80px 20px;
-}
-
-.price {
-  font-size: 36px;
-}
-
-/* QR CODE */
-.qrcode {
-  margin-top: 20px;
-}
-
-.qrcode img {
-  width: 180px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* FOOTER */
-footer {
-  background: #1f3c68;
-  color: white;
-  padding: 20px;
-}
-</style>
-
+  <title>Santita Jovens</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body>
+<body class="is-preload">
 
-<header>
-  <h1>Grupo de Jovens Santita</h1>
-  <p>Encontre propósito, viva a fé e faça parte de algo maior</p>
-  #vendaQuero participar</a>
-</header>
+<!-- HEADER -->
+<section id="header">
+  <div class="inner">
+    <span class="icon solid major fa-users"></span>
+    <h1>Grupo de Jovens <strong>Santita</strong></h1>
+    <p>Encontre propósito, viva a fé e faça parte de algo maior</p>
 
-<section>
-  <h2>Sobre o grupo</h2>
-  <p>Um movimento jovem que busca crescer na fé, criar conexões e viver uma vida com propósito em Deus.</p>
+    <ul class="actions special">
+      <li>
+        <a href="https://wa.me/5511979566910" class="button scrolly">
+          Quero participar
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
 
-<section>
-  <h2>O que vai encontrar</h2>
+<!-- SOBRE -->
+<section id="one" class="main style1">
+  <div class="container">
+    <div class="row gtr-150">
 
-  <div class="benefits">
-    <div class="card">
-      <h3>🔥 Mensagens</h3>
-      <p>Palavras que fortalecem sua caminhada</p>
+      <div class="col-6 col-12-medium">
+        <header class="major">
+          <h2>Sobre o grupo</h2>
+        </header>
+        <p>
+          Somos um grupo de jovens apaixonados por Deus, que busca crescer na fé,
+          criar conexões verdadeiras e viver uma vida com propósito.
+        </p>
+      </div>
+
+      <div class="col-6 col-12-medium">
+        <span class="image fit">
+          <img src="images/pic01.jpg" alt="">
+        </span>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>🙏 Fé</h3>
-      <p>Crescimento espiritual contínuo</p>
-    </div>
+<!-- BENEFICIOS -->
+<section id="two" class="main style2">
+  <div class="container">
+    <div class="row gtr-150">
 
-    <div class="card">
-      <h3>🤝 Comunidade</h3>
-      <p>Pessoas com o mesmo propósito</p>
+      <div class="col-6 col-12-medium">
+        <ul class="major-icons">
+          <li><span class="icon solid style1 major fa-fire"></span></li>
+          <li><span class="icon solid style2 major fa-praying-hands"></span></li>
+          <li><span class="icon solid style3 major fa-users"></span></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-12-medium">
+        <header class="major">
+          <h2>O que você vai encontrar</h2>
+        </header>
+
+        <p><strong>🔥 Mensagens que fortalecem</strong><br>
+        Palavras que vão impulsionar sua caminhada com Deus.</p>
+
+        <p><strong>🙏 Crescimento espiritual</strong><br>
+        Um ambiente para desenvolver sua fé continuamente.</p>
+
+        <p><strong>🤝 Comunidade</strong><br>
+        Pessoas com propósito, amizade e união.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- CAMISETA -->
+<section id="three" class="main style1 special">
+  <div class="container">
+    <header class="major">
+      <h2>Camiseta Oficial Santita</h2>
+    </header>
 
-<section class="sell">
-  <h2>Camiseta Oficial Santita</h2>
-  <p>Vista o propósito e faça parte desse movimento</p>
+    <p>Vista o propósito e faça parte desse movimento 🙌</p>
 
-  <p>De <strike>R$79</strike></p>
-  <div class="price">R$49</div>
+    <h3><del>R$79</del> POR APENAS R$49</h3>
 
-  <!-- BOTÃO WHATSAPP COMPRA -->
-  <a href="https://wa.me/5511979566910?text=Olá,%20quero%20comprar%20a%20camiseta%20Santita"
-     class="btn">
-     Comprar agora
-  </a>
-
-  <p>Faça seu pedido no botão acima</p>
+    <ul class="actions special">
+      <li>
+        <a href="https://wa.me/5511979566910?text=Olá,%20quero%20comprar%20a%20camiseta%20Santita"
+           class="button primary">
+          Comprar agora
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <!-- APOIO -->
-<section>
-  <h2>Apoie nosso ministério</h2>
-  <p>Com sua contribuição, alcançamos mais vidas 🙌</p>
+<section id="four" class="main style2 special">
+  <div class="container">
+    <header class="major">
+      <h2>Apoie nosso ministério</h2>
+    </header>
 
-  <div class="qrcode">
-    <!-- SUBSTITUI PELO SEU QR CODE -->
-    <img src="imagens/qrcode-pix.png" alt="QR Code Pix">
+    <p>Com sua contribuição, conseguimos alcançar mais vidas 🙏</p>
+
+    <span class="image fit">
+      <img src="images/qrcode-pix.png" alt="QR Code Pix">
+    </span>
+
+    <p>Escaneie o QR Code e contribua via Pix</p>
   </div>
-
-  <p>Escaneie o QR Code e contribua via Pix</p>
 </section>
 
-<footer>
-  <p>© 2026 Santita Jovens</p>
-</footer>
+<!-- FOOTER -->
+<section id="footer">
+  <ul class="icons">
+    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://wa.me/5511979566910" class="icon solid alt fa-phone"><span class="label">WhatsApp</span></a></li>
+  </ul>
+
+  <ul class="copyright">
+    <li>© 2026 Santita Jovens</li>
+  </ul>
+</section>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
