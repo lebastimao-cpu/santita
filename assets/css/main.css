@@ -29,6 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.logo-banner {
+  width: 180px; /* ajuste conforme o tamanho desejado */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* centraliza e dá espaço abaixo */
+}
 body {
 	line-height: 1;
 }
